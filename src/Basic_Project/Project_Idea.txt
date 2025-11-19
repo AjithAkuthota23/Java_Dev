@@ -1,0 +1,52 @@
+Project Title: Simple Bank Management System in Java
+Problem Statement:
+
+A bank wants a simple console-based application to manage customer accounts. The system should allow the creation of bank accounts, handling deposits and withdrawals, and displaying account information while ensuring data security, proper access control, and safe operations.
+
+The system should also demonstrate key Object-Oriented Programming concepts like Encapsulation, Static & Final keywords, and Exception Handling.
+
+Objectives:
+1. Enable the creation of multiple bank accounts with unique account numbers.
+2. Allow depositing and withdrawing money securely.
+3. Ensure the account balance and account details are protected from unauthorized modifications.
+4. Handle invalid operations such as overdrafts, negative deposits, or invalid account numbers gracefully.
+5. Use static and final keywords to demonstrate class-level constants and immutable properties.
+
+Functional Requirements:
+
+Account Creation:
+Each bank account should have:
+Account Number (unique, final)
+Account Holder Name (modifiable)
+Account Balance (modifiable through deposit/withdraw methods)
+Automatically assign unique account numbers using a static counter.
+Initial balance must be non-negative.
+
+Deposit Money:
+Allow users to deposit money into an account.
+Deposit amount must be positive.
+Update account balance after deposit.
+
+Withdraw Money:
+Allow users to withdraw money from an account.
+Withdrawal amount must be positive and less than or equal to account balance.
+Throw an exception if withdrawal violates rules.
+
+Display Account Details:
+Show account information:
+Account Number
+Account Holder Name
+Current Balance
+Use access modifiers to ensure data security.
+
+Prevent Invalid Operations:
+Handle errors such as:
+Negative deposits or withdrawals
+Insufficient balance for withdrawal
+Invalid account number for transactions
+Use Exception Handling to manage these errors gracefully without crashing the program.
+
+Demonstrate Static & Final Keywords
+Static: Use a static counter to assign unique account numbers.
+Final: Make account number final so it cannot be modified after creation.
+
